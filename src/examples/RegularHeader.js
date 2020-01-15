@@ -8,12 +8,11 @@ query FirstQuery{
             title
             description
             author
-            data{
-                age
+           
             }
         }
     }
-}
+
 `
 const RegularHeader = () => {
     return (

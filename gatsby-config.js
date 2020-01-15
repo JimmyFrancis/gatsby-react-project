@@ -11,12 +11,13 @@ module.exports = {
     title:"BackRoads",
     description:"Explore awesome worldwide tours & discover what makes each of the unique. Forget your daily routine & say yes to adventure",
     author:"@jamesfrancis",
-    data:{
-      name:"Jimmy",
-      age:24,
-    }, 
+    twitterUsername:"@johndoe",
+    image:'/defaultBcg.jpeg',
+    siteUrl:'https://gatsby-project-jimmy.netlify.com',
+
   },
   plugins:[
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
