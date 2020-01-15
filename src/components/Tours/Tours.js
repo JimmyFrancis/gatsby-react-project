@@ -2,7 +2,7 @@ import React from 'react'
 import TourList from './TourList'
 import {useStaticQuery,graphql} from 'gatsby'
 
-import Tour from './Tour'
+//import Tour from './Tour'
 
 const getTours = graphql`
 query{

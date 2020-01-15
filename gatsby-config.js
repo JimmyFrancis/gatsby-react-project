@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins:[
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -30,6 +31,15 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://gatsby-project-jimmy.netlify.com',
+        sitemap: 'https://gatsby-project-jimmy.netlify.com/sitemap.xml',
+        policy: [{ userAgent: "*", allow: "/"},]
+
       },
     },
     'gatsby-transformer-sharp', 
