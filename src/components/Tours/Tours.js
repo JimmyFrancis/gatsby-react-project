@@ -17,7 +17,7 @@ query{
                 days
                 images{
                     fluid{
-                        ...GatsbyContentfulFluid_tracedSVG
+                        ...GatsbyContentfulFluid
                     }
                 }
             }
